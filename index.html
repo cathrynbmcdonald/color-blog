@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Cathy McDonald">
+  <meta name="description" content="Website for Using Color in Web Development">
+  <title>Using Color in Web Development</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="header">Using Color in Web Development</h1>
+    <!-- <nav>
+      <ul>
+        <li>
+          <a href="#color-wheels">Color Wheels</a>
+        </li>
+        <li>
+          <a href="#color-codes">Color Codes</a>
+        </li>
+        <li>
+          <a href="#opacity">Opacity</a>
+        </li>
+        <li>
+          <a href="#contrast-ratio">Contrast Ratio</a>
+        </li>
+        <li>
+          <a href="#60-30-10">60-30-10 Color Rule</a>
+        </li>
+      </ul>
+    </nav> -->
+  </header>
+  <main>
+    <section id="color-wheels" class="square">
+      <article class="card2">
+        <h2>Color Wheels</h2>
+        <br>
+        <p>Every web developer need to become fluent in color theory and the concept of a color wheel.
+          The
+          first color wheel was developed by mathematician and physicist, Isaac Newton in 1665. During that year, a wave
+          of
+          bubonic plague swept through England, and as a result, Cambridge University temporarily closed. Newton
+          returned
+          home to Woolsthorpe, England and over the next months he changed the world with his theories on calculus,
+          gravitation, and optics. In his famous prism experiment, he discovered that white light is composed of a
+          spectrum
+          of seven visible colors, which are red, orange, yellow, green, blue, indigo, and violet.</p>
+      </article>
+      <article class="card2">
+        <h3>Subtractive Color Mixing</h3>
+        <br>
+        <p>Newton organized the visible spectrum of colors into a color wheel with red, yellow, and blue as the primary
+          colors which can be mixed to form secondary colors of orange, green, and purple. These secondary colors can be
+          mixed to form tertiary colors of yellow-green (chartreuse), green-blue (teal),and blue-purple (violet). This
+          type of color mixing, called subtractive mixing, only works when the source of light is being reflected, as it
+          is in paint. Newton's color wheel can be seen in the image below:</p>
+        <figure>
+          <h5 style="color: #ffefd5;">F</h5>
+          <h5 style="color: #ffefd5;">F</h5>
+          <img src="img/imageedit_3_5880451247.png" alt="RYB Color Wheel" width="380px" height="auto">
+          <figcaption><br>
+            Newton's Color Wheel By <a href=&quot;//commons.wikimedia.org/wiki/User:Kwamikagami&quot;
+              title=&quot;User:Kwamikagami&quot;&gt;Kwamikagami&lt;/a&gt; - Own work based on: &lt;a
+              href=&quot;//commons.wikimedia.org/wiki/File:Color_star-en_(tertiary_names)-ar.svg&quot;
+              title=&quot;File:Color star-en (tertiary names)-ar.svg&quot;&gt;Color star-en (tertiary
+              names)-ar.svg&lt;/a&gt;&amp;nbsp;by &lt;a
+              href=&quot;//commons.wikimedia.org/wiki/User:%D8%A8%D8%A7%D8%B3%D9%85&quot;
+              title=&quot;User:باسم&quot;&gt;باسم&lt;/a&gt;, <a href="https://creativecommons.org/licenses/by-sa/4.0"
+              title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
+              href="https://commons.wikimedia.org/w/index.php?curid=43056011">Link</a>
+          </figcaption>
+        </figure>
+      </article>
+      <article class="card2">
+        <h3>Additive Color Mixing</h3>
+        <br>
+        <p>
+          When light is being emitted, as it is in a computer monitor, a different type of color mixing is required
+          which is called additive mixing. The color wheel for additive color mixing is based on three primary colors of
+          red, green, and blue, which can be mixed to form secondary colors of yellow, magenta, and cyan. These
+          secondary colors can be mixed to form tertiary colors of red-yellow (orange), yellow-green (chartreuse green),
+          green-cyan (spring green), cyan-blue (azure), blue-magenta (violet), and magenta-red (rose). The additive
+          color wheel can be seen in the image below:
+        </p>
+        <br>
+        <figure>
+          <img src="img/imageedit_3_9774605281.png" alt="RYB Color Wheel">
+          <br>
+          <br>
+          <figcaption>
+            RGB Color Wheel By <a href="https://en.wikipedia.org/wiki/User:DanPMK" class="extiw"
+              title="wikipedia:User:DanPMK">DanPMK</a> at <a href="https://en.wikipedia.org/wiki/" class="extiw"
+              title="wikipedia:">English Wikipedia</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0"
+              title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a
+              href="https://commons.wikimedia.org/w/index.php?curid=13427725">Link</a>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+    <section id="color-codes" class="square">
+      <article class="card2">
+        <h2>Color Codes</h2>
+        <br>
+        Computer monitors are made up of an array of pixels, and each pixel is made up of three subpixels that emit
+        red, green, or blue light. By adjusting the intensity of light emitted by each subpixel with an 8-bit code
+        ranging from 0 - 255, over 16 million (256<sup>3</sup>) different additive color combinations are possible. The
+        three
+        hex codes can be specified with RGB, Hex, or HSL values.
+      </article>
+      <article class="card2">
+        <h3>RGB</h3>
+        <br>
+        <p>
+          RGB color codes are written as rgb(red, green, blue) where each parameter (red, green, and blue) defines the
+          intensity of color with a value between 0 and 255. For example, rgb(255, 0, 0)
+          displays as red, because the red subpixel is set to its highest value (255), while the other two subpixels,
+          green and blue, are set to their lowest value (0):
+        </p>
+        <br>
+        <h1 style="color:#ffefd5; background-color:red; padding:15px; text-align:center; width:100%">rgb(255, 0, 0)</h1>
+      </article>
+      <article class="card2">
+        <h3>Hex</h3>
+        <br>
+        <p>
+          Hex color codes are written as hexidecimal or hex
+          values #RRGGBB where RR (red), GG (green) and BB (blue) are hexadecimal integers between 00 and ff. For
+          example, #00ff00 displays as green, because the green subpixel is set to its highest value (ff), while the
+          other two subpixels, red and blue, are set to 00:
+        </p>
+        <br>
+        <h1 style="color:#383800; background-color:#00ff00; padding:15px; width:100%; text-align:center">#00ff00</h1>
+      </article>
+      <article class="card2">
+        <h3>HSL</h3>
+        <br>
+        <p>
+          HSL Color codes are written as hsl(hue, saturation, lightness) where hue is expressed as degrees on the RGB
+          color wheel from 0 to 360 (0 is red, 120 is green, and
+          240 is blue), saturation is expressed as a percentage from 0 to 100 (0% is gray, 50% is half gray / half
+          color, and 100% is full color), and lightness is expressed as a percentage from 0 to 100 (0% is black, 50% is
+          neither light nor dark, and 100% is white.) For example, hsl(240, 100%, 50%) displays as blue, because the
+          hue for blue is 240 degrees, the saturation for full color is 100%, and the lightness for neither light nor
+          dark is 50%.
+        </p>
+        <br>
+        <h1 style="color:#ffefd5; background-color:hsl(240,100%,50%); padding:15px; width:100%; text-align:center">
+          hsl(240, 100%, 50%)</h1>
+      </article>
+    </section>
+    <section class="square">
+      <article class="card2">
+        <h2>Opacity</h2>
+        <br>
+        All three of these color codes can be extended with an alpha parameter that specifies the opacity of the color.
+        The color codes are then computed with the following formula:
+        <br>
+        <br>
+        <p style="margin-left:25px">adjusted color = &alpha; &times; foregroundColor + (1&nbsp;-&nbsp;&alpha;) &times;
+          backgroundColor</p>
+        <br>
+        <br>
+        RGB color codes can be extended as rgba(red, green, blue, alpha) and HSL color codes can be extended as
+        hsla(hue, saturation %, lightness %, alpha) where alpha is a decimal value between 0.0 (fully transparent) and
+        1.0 (fully opaque.) Hex color codes can be extended as #RRGGBBAA where AA is a hex value between 00 (fully
+        transparent) and ff (fully opaque.)
+      </article>
+      <article style="color:#383800; background-color:rgba(255, 0, 0, .2); padding:15px; text-align:center"
+        class="card2">
+        <br>
+        <br>
+        <h3>rgba(255, 0, 0, .2)</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+          20% red
+          <br>
+          +
+          <br>
+          80% papaya whip
+          <br>
+          <br>
+          <br>
+          <br>
+          <h3>rgb(255, 191, 170)</h2>
+            <br>
+            <br>
+      </article>
+      <article
+        style="color:hsl(60, 100%, 11%); background-color:hsla(120, 100%, 50%, .5); padding:15px; text-align:center"
+        class="card2">
+        <br>
+        <br>
+        <h3>hsla(120, 100%, 50%, .5)</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+          50% green
+          <br>
+          +
+          <br>
+          50% papaya whip
+          <br>
+          <br>
+          <br>
+          <br>
+          <h3>hsl(111, 91%, 70%)</h2>
+            <br>
+            <br>
+      </article>
+      <article style="color:white; background-color:#0000ffcc; padding:15px; text-align:center" class="card2">
+        <br>
+        <br>
+        <h3>#0000ffcc</h2>
+          <br>
+          <br>
+          <br>
+          <br>
+          80% blue
+          <br>
+          +
+          <br>
+          20% papaya whip
+          <br>
+          <br>
+          <br>
+          <br>
+          <h3>#3330f7</h2>
+            <br>
+            <br>
+      </article>
+    </section>
+    <section class="square">
+      <article class="card2">
+        <h2>Contrast Ratio</h2>
+        <br>
+        When using color, it's important to make sure the text color and the background color have sufficient contrast
+        for readability. A contrast of at least 4.5:1 is recommended for regular size text and 3:1 for large text (18px
+        or more). However, it's also important to avoid too much contrast. For example, the colors black and white have
+        a contrast ratio of 21:1, which can also make reading more difficult. A good color combination usually has a
+        contrast ratio around 10:1.
+      </article>
+      <article style="color:black; background-color:#880000; padding:15px; text-align:center" class="card2">
+        <h2>2:1 Not Enough</h2>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum architecto labore nobis maiores delectus
+          iusto ab sint incidunt, suscipit quaerat at quam numquam sed itaque veniam ad doloribus? Saepe, voluptatum!
+          Ipsam, odio fuga obcaecati soluta adipisci dignissimos libero eveniet repudiandae minus ipsa commodi voluptas
+          totam natus magni illum, sunt ipsum aliquid. Aliquam facilis officiis ducimus dolorum saepe tenetur ut nihil?
+        </p>
+      </article>
+      <article style="color:white; background-color:#002200; padding:15px; text-align:center" class="card2">
+        <h2>17:1 Too Much</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos placeat, consectetur laborum minus enim
+          deserunt debitis maxime quod repellendus. Odit, nihil eaque. Labore qui dolor commodi beatae, aspernatur
+          maxime? Vitae.
+          Excepturi molestias esse laudantium eius suscipit qui quis quae, ea consequatur. Recusandae optio saepe
+          pariatur reiciendis expedita odio ipsam, quae odit consectetur quas eveniet autem sit ratione tenetur porro
+          accusamus!</p>
+      </article>
+      <article style="color:#030303; background-color:#ADADFF; padding:15px; text-align:center" class="card2">
+        <h2>10:1 Ideal</h2>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti consectetur tenetur perspiciatis repellat
+          dicta voluptatem adipisci, id, quidem maxime optio fugit consequuntur minima, tempora quisquam blanditiis
+          error iure eveniet esse.
+          Fuga, natus? Sunt iure animi sapiente quidem labore consequatur soluta atque et laborum vitae, cupiditate in
+          est debitis porro quisquam sint illum reprehenderit quis corporis suscipit nam pariatur. Maxime, error.</p>
+      </article>
+    </section>
+    <section class="square">
+      <article id="profile0" class="card2">
+        <h2>60-30-10 Rule</h2>
+        <br>
+        <ul>
+          <li>The Primary Color is 60%</li>
+          <li>The Secondary Color is 30%</li>
+          <li>The Accent Color is 10%</li>
+        </ul>
+      </article>
+      <article id="profile1" class="card">
+        <h1 class="top1">Florida Beach</h1>
+        <nav>
+          <a href="#test">Home</a>
+          <a href="#test">About</a>
+          <a href="#test">Map</a>
+        </nav>
+        <figure class="card3">
+          <img src="img/wtqqnkYDYi2ifsWZVW2MT4-1200-80-1.jpg" alt="" width="500" height="500">
+          <figcaption><br><br>
+            <quote>"Don't forget your sunscreen!"</quote><br><br>
+          </figcaption>
+        </figure>
+        <h1 class="bottom1">&nbsp</h1>
+      </article>
+      <article id="profile2" class="card">
+        <h1 class="top2">Zen</h1>
+        <nav>
+          <a href="#test">Home</a>
+          <a href="#test">About</a>
+          <a href="#test">Map</a>
+        </nav>
+        <figure class="card4">
+          <img src="img/imageszen.jpeg" alt="" width="500" height="500">
+          <figcaption><br><br>
+            <quote>"Strive for progress over perfection."</quote><br><br>
+          </figcaption>
+        </figure>
+        <h1 class="bottom2">&nbsp</h1>
+      </article>
+      <article id="profile3" class="card">
+        <h1 class="top3">Greek Island</h1>
+        <nav>
+          <a href="#test">Home</a>
+          <a href="#test">About</a>
+          <a href="#test">Map</a>
+        </nav>
+        <figure class="card5">
+          <img src="img/imagessantorini.jpeg" alt="" width="500" height="500">
+          <figcaption><br><br>
+            <quote>"The most magical place on earth!"</quote><br><br>
+          </figcaption>
+        </figure>
+        <h1 class="bottom3">&nbsp</h1>
+      </article>
+    </section>
+  </main>
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffefd5;
+    color: #383800;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .square {
+    border: 2px solid #383800;
+    margin: 1.5em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    gap: 2rem
+  }
+
+  /* .square>* {
+    flex-basis: 100%;
+  } */
+  .header {
+    background-color: hsl(60, 100%, 11%);
+    color: hsl(37, 100%, 92%);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 35px;
+  }
+
+  .card {
+    width: min(100%, 350px);
+    /* border: 2px solid #e1b07f; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .card2 {
+    width: min(100%, 350px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card figure {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  .card3 img {
+    border: 5px double teal;
+    border-radius: 50%;
+  }
+  .card4 img {
+    border: 5px double #5D6C37;
+    border-radius: 50%;
+  }
+  .card5 img {
+    border: 5px double #A43256;
+    border-radius: 50%;
+  }
+  .main {
+    display: flex;
+    text-align: center;
+    padding: 1.5em;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+
+
+  /* #profile1 h1 {
+    background-color: white;
+    color: blue;
+    width: 100%;
+    text-align: center;
+  } */
+  #profile1 {
+    /* background-color: burlywood; */
+    background-image: radial-gradient(white, #F08FC6);
+  }
+
+  #profile2 {
+    /* background-color: #47383B; */
+    background-image: radial-gradient(white, #47383B);
+  }
+  #profile3 {
+    background-image: radial-gradient(white, #0162ad);
+  }
+
+  .card h2 {
+    background-color: burlywood;
+    width: 100%;
+    text-align: center;
+  }
+
+  #profile1 nav {
+    background-color: #fffcfc;
+    padding: .5rem;
+    width: 100%;
+    border-bottom: 2px solid teal;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  #profile2 nav {
+    background-color: snow;
+    padding: .5rem;
+    width: 100%;
+    border-bottom: 2px solid #5D6C37;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  #profile3 nav {
+    background-color: snow;
+    padding: .5rem;
+    width: 100%;
+    border-bottom: 2px solid #A43256;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  #profile1 nav a {
+    color: teal
+  }
+  #profile2 nav a {
+    color: #5D6C37
+  }
+
+  #profile3 nav a {
+    color: #A43256
+  }
+  /* .card p {
+    text-align: center;
+  } */
+
+  .bottom1 {
+    background-color: #DA1E89;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .top1 {
+    background-color: hsl(326, 76%, 49%);
+    width: 100%;
+    color: snow;
+    text-align: center;
+    padding: 10px;
+  }
+  .bottom2 {
+    background-color: hsl(348, 12%, 25%);
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .top2 {
+    background-color:#47383B;
+    width: 100%;
+    color: #fffafa;
+    text-align: center;
+    padding: 10px;
+  }
+  .bottom3 {
+    background-color: #0162ad;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .top3 {
+    background-color: #0162ad;
+    width: 100%;
+    color: snow;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .card3 {
+    margin: 15px;
+    border: 2px solid teal;
+    border-radius: 15px;
+    padding: 1rem;
+    /* background-color: papayawhip; */
+    background-image: radial-gradient(white, hsl(323, 47%, 93%));
+    width: min(100%, 230px)
+  }
+  .card4 {
+    margin: 15px;
+    border: 2px solid #5D6C37;
+    border-radius: 15px;
+    padding: 1rem;
+    /* background-color: #8F8084; */
+    /* background-color: #aFa0a4; */
+    background-image: radial-gradient(white, #aFa0a4);
+    width: min(100%, 230px)
+  }
+  .card5 {
+    margin: 15px;
+    border: 2px solid #A43256;
+    border-radius: 15px;
+    padding: 1rem;
+    /* background-color: #B7D8FC; */
+    background-image: radial-gradient(white, #B7D8FC);
+    width: min(100%, 230px)
+  }
+
+  .card3 figcaption {
+    text-align: center;
+    color: #333;
+  }
+  .card4 figcaption {
+    text-align: center;
+    color: #333;
+  }
+  .card5 figcaption {
+    text-align: center;
+    color: #333;
+  }
+</style>
+
+</html>
